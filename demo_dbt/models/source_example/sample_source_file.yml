@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: sample_source
+    description: 'Reading from a sample table using dbt source'
+    database: polar-scene-298315    # for bigquery, database name is project name
+    schema: demo_dbt                # and schema is dataset name
+    tables:
+      - name: sample
+        description: 'Table with 10 rows'
