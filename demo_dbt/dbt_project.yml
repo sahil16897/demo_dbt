@@ -36,3 +36,10 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+
+# variables can be defined here
+vars:
+  value: 613
+
+# hooks usage
+# on-run-start: "insert into "

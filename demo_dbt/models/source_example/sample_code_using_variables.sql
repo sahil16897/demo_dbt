@@ -5,7 +5,7 @@ with source_table as (
 ),
 
 final as (
-    select * from source_table
+    select * from source_table where int64_field_3 = {{var('value')}}
 )
 
 
