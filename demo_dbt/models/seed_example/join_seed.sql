@@ -32,7 +32,8 @@ final as (
             when mod(username.id, 2)=0 then 'Even ID'
             when mod(username.id, 2)<>0 then 'ODD ID'
         END as nature_of_id,
-        CONCAT(username.first_name, " ", username.last_name) as full_name
+        CONCAT(username.first_name, " ", username.last_name) as full_name,
+        CONCAT(username.first_name,username.last_name,"@gmail.com") as gmail_id
         
         from username
         inner join email_table
